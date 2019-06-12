@@ -1,13 +1,11 @@
 def badge_maker(name)
-  return "Hello, my name is #{name}."
+  "Hello, my name is #{name}."
 end
 
 attendees = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 
 def batch_badge_creator(attendees)
-  attendees.each do |name|
-    badges = []
-    badges << "Hello, my name is #{name}."
-#    return "Hello, my name is #{name}."
+  attendees.map do |name|
+    "Hello, my name is #{name}"
   end
 end
